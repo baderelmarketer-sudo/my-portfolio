@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Digital Marketing Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h2>Marketing<span class="dot">Pro</span></h2>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="schedule.html" class="nav-link btn-nav">Schedule Meeting</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content" data-aos="fade-up">
+                <span class="page-badge">Marketing Insights</span>
+                <h1>Expert Tips & Industry Trends</h1>
+                <p>Stay ahead with actionable strategies and proven techniques</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Filters -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-filters" data-aos="fade-up">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="blogSearch" placeholder="Search articles...">
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-th"></i> All Posts
+                    </button>
+                    <button class="filter-btn" data-filter="seo">
+                        <i class="fas fa-search"></i> SEO
+                    </button>
+                    <button class="filter-btn" data-filter="paid-ads">
+                        <i class="fas fa-ad"></i> Paid Ads
+                    </button>
+                    <button class="filter-btn" data-filter="social-media">
+                        <i class="fas fa-hashtag"></i> Social Media
+                    </button>
+                    <button class="filter-btn" data-filter="content">
+                        <i class="fas fa-pen-fancy"></i> Content
+                    </button>
+                    <button class="filter-btn" data-filter="analytics">
+                        <i class="fas fa-chart-line"></i> Analytics
+                    </button>
+                    <button class="filter-btn" data-filter="youtube">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </button>
+                </div>
+            </div>
+
+            <!-- Featured Post -->
+            <div class="featured-post" data-aos="fade-up">
+                <div class="featured-post-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200" alt="Featured">
+                    <span class="featured-badge">Featured</span>
+                </div>
+                <div class="featured-post-content">
+                    <div class="post-meta">
+                        <span class="post-category seo-cat">SEO</span>
+                        <span><i class="far fa-calendar"></i> Feb 1, 2025</span>
+                        <span><i class="far fa-clock"></i> 12 min read</span>
+                    </div>
+                    <h2>The Complete Guide to SEO in 2025: Strategies That Actually Work</h2>
+                    <p>Discover the latest SEO techniques that are delivering real results. From AI-powered content optimization to advanced technical SEO, learn what's working now and how to implement these strategies for your business.</p>
+                    <a href="blog-post.html" class="btn btn-primary ripple-effect">
+                        Read Full Article <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-posts-grid">
+                
+                <!-- Blog Post 1 -->
+                <article class="blog-post-card" data-category="seo" data-aos="fade-up">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800" alt="SEO">
+                        <div class="post-overlay">
+                            <a href="blog-post.html" class="read-post-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="post-meta">
+                            <span class="post-category seo-cat">SEO</span>
+                            <span class="post-date"><i class="far fa-calendar"></i> Jan 28, 2025</span>
+                        </div>
+                        <h3>10 Technical SEO Mistakes Killing Your Rankings</h3>
+                        <p>Avoid these common technical SEO errors that could be holding your website back from reaching the top of search results.</p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <i class="fas fa-user-circle"></i>
+                                <span>By Marketing Pro</span>
+                            </div>
+                            <span class="read-time"><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post-card" data-category="paid-ads" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800" alt="Google Ads">
+                        <div class="post-overlay">
+                            <a href="blog-post.html" class="read-post-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="post-meta">
+                            <span class="post-category ads-cat">Paid Ads</span>
+                            <span class="post-date"><i class="far fa-calendar"></i> Jan 25, 2025</span>
+                        </div>
+                        <h3>How to Lower Your Google Ads CPC by 50%</h3>
+                        <p>Proven strategies to reduce your cost-per-click while maintaining or improving campaign performance and ROI.</p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <i class="fas fa-user-circle"></i>
+                                <span>By Marketing Pro</span>
+                            </div>
+                            <span class="read-time"><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-post-card" data-category="social-media" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800" alt="Social Media">
+                        <div class="post-overlay">
+                            <a href="blog-post.html" class="read-post-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="post-meta">
+                            <span class="post-category social-cat">Social Media</span>
+                            <span class="post-date"><i class="far fa-calendar"></i> Jan 22, 2025</span>
+                        </div>
+                        <h3>Instagram Algorithm Update: What Changed in 2025</h3>
+                        <p>Breaking down the latest Instagram algorithm changes and how to optimize your content strategy accordingly.</p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <i class="fas fa-user-circle"></i>
+                                <span>By Marketing Pro</span>
+                            </div>
+                            <span class="read-time"><i class="far fa-clock"></i> 7 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-post-card" data-category="content" data-aos="fade-up">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800" alt="Content Marketing">
+                        <div class="post-overlay">
+                            <a href="blog-post.html" class="read-post-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="post-meta">
+                            <span class="post-category content-cat">Content</span>
+                            <span class="post-date"><i class="far fa-calendar"></i> Jan 20, 2025</span>
+                        </div>
+                        <h3>Creating Viral Content: The Psychology of Shares</h3>
+                        <p>Learn the psychological triggers that make content go viral and how to apply them to your marketing strategy.</p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <i class="fas fa-user-circle"></i>
+                                <span>By Marketing Pro</span>
+                            </div>
+                            <span class="read-time"><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-post-card" data-category="analytics" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Analytics">
+                        <div class="post-overlay">
+                            <a href="blog-post.html" class="read-post-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="post-meta">
+                            <span class="post-category analytics-cat">Analytics</span>
+                            <span class="post-date"><i class="far fa-calendar"></i> Jan 18, 2025</span>
+                        </div>
+                        <h3>GA4 Mastery: 15 Reports Every Marketer Needs</h3>
+                        <p>Essential Google Analytics 4 reports to track your marketing performance and make data-driven decisions.</p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <i class="fas fa-user-circle"></i>
+                                <span>By Marketing Pro</span>
+                            </div>
+                            <span class="read-time"><i class="far fa-clock"></i> 11 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-post-card" data-category="youtube" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800" alt="YouTube">
+                        <div class="post-overlay">
+                            <a href="blog-post.html" class="read-post-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="post-meta">
+                            <span class="post-category youtube-cat">YouTube</span>
+                            <span class="post-date"><i class="far fa-calendar"></i> Jan 15, 2025</span>
+                        </div>
+                        <h3>YouTube SEO: Rank Your Videos in 2025</h3>
+                        <p>Advanced YouTube optimization techniques to increase views, subscribers, and channel authority.</p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <i class="fas fa-user-circle"></i>
+                                <span>By Marketing Pro</span>
+                            </div>
+                            <span class="read-time"><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 7 -->
+                <article class="blog-post-card" data-category="paid-ads" data-aos="fade-up">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=800" alt="Meta Ads">
+                        <div class="post-overlay">
+                            <a href="blog-post.html" class="read-post-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="post-meta">
+                            <span class="post-category ads-cat">Paid Ads</span>
+                            <span class="post-date"><i class="far fa-calendar"></i> Jan 12, 2025</span>
+                        </div>
+                        <h3>Facebook Ads 2025: Complete Campaign Guide</h3>
+                        <p>Step-by-step guide to creating high-converting Facebook and Instagram ad campaigns in 2025.</p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <i class="fas fa-user-circle"></i>
+                                <span>By Marketing Pro</span>
+                            </div>
+                            <span class="read-time"><i class="far fa-clock"></i> 12 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 8 -->
+                <article class="blog-post-card" data-category="seo" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800" alt="Link Building">
+                        <div class="post-overlay">
+                            <a href="blog-post.html" class="read-post-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="post-meta">
+                            <span class="post-category seo-cat">SEO</span>
+                            <span class="post-date"><i class="far fa-calendar"></i> Jan 10, 2025</span>
+                        </div>
+                        <h3>White Hat Link Building: 12 Proven Strategies</h3>
+                        <p>Ethical and effective link building techniques that won't get you penalized by Google.</p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <i class="fas fa-user-circle"></i>
+                                <span>By Marketing Pro</span>
+                            </div>
+                            <span class="read-time"><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 9 -->
+                <article class="blog-post-card" data-category="social-media" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800" alt="TikTok">
+                        <div class="post-overlay">
+                            <a href="blog-post.html" class="read-post-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="post-meta">
+                            <span class="post-category social-cat">Social Media</span>
+                            <span class="post-date"><i class="far fa-calendar"></i> Jan 8, 2025</span>
+                        </div>
+                        <h3>TikTok Marketing for Businesses in 2025</h3>
+                        <p>How to leverage TikTok's massive reach to grow your brand and connect with younger audiences.</p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <i class="fas fa-user-circle"></i>
+                                <span>By Marketing Pro</span>
+                            </div>
+                            <span class="read-time"><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" data-aos="fade-up">
+                <button class="page-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content" data-aos="zoom-in">
+                <div class="newsletter-text">
+                    <h2>Get Weekly Marketing Tips</h2>
+                    <p>Join 10,000+ marketers receiving exclusive insights and strategies</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">
+                        Subscribe <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Marketing<span class="dot">Pro</span></h3>
+                    <p>Transforming brands through data-driven digital marketing strategies.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="schedule.html">Schedule Meeting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#" data-filter="seo">SEO</a></li>
+                        <li><a href="#" data-filter="paid-ads">Paid Advertising</a></li>
+                        <li><a href="#" data-filter="social-media">Social Media</a></li>
+                        <li><a href="#" data-filter="analytics">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hello@marketingpro.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Your City, Country</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MarketingPro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

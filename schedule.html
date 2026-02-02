@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Meeting | Digital Marketing Consultation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h2>Marketing<span class="dot">Pro</span></h2>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="schedule.html" class="nav-link btn-nav active">Schedule Meeting</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero schedule-hero">
+        <div class="container">
+            <div class="page-hero-content" data-aos="fade-up">
+                <span class="page-badge">Let's Connect</span>
+                <h1>Schedule Your Free Consultation</h1>
+                <p>Book a 30-minute strategy session to discuss your marketing goals</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section">
+        <div class="container">
+            <div class="schedule-wrapper">
+                
+                <!-- Left Side - Benefits -->
+                <div class="schedule-benefits" data-aos="fade-right">
+                    <h2>What You'll Get</h2>
+                    <p>This complimentary consultation includes:</p>
+                    
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Marketing Audit</h3>
+                            <p>Quick analysis of your current digital marketing efforts and opportunities</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Custom Strategy</h3>
+                            <p>Tailored recommendations based on your specific business goals</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Action Plan</h3>
+                            <p>Clear next steps to improve your marketing performance</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Q&A Session</h3>
+                            <p>Ask any questions about digital marketing strategies</p>
+                        </div>
+                    </div>
+
+                    <div class="trust-signals">
+                        <div class="trust-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No commitment required</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% free consultation</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Instant confirmation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Booking Options -->
+                <div class="schedule-booking" data-aos="fade-left">
+                    
+                    <!-- Option 1: Calendly Embed (Recommended) -->
+                    <div class="booking-option active" id="calendlyOption">
+                        <h3>Choose Your Time</h3>
+                        <p class="booking-subtitle">Select a convenient time slot from my calendar</p>
+                        
+                        <!-- Calendly inline widget begin -->
+                        <div class="calendly-inline-widget" 
+                             data-url="https://calendly.com/your-link/30min" 
+                             style="min-width:320px;height:700px;">
+                        </div>
+                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                        <!-- Calendly inline widget end -->
+                        
+                        <p class="calendly-note">
+                            <i class="fas fa-info-circle"></i>
+                            Don't have a Calendly account yet? <a href="#contactForm" class="switch-form">Use contact form instead</a>
+                        </p>
+                    </div>
+
+                    <!-- Option 2: Contact Form (Alternative) -->
+                    <div class="booking-option" id="contactFormOption">
+                        <h3>Request a Meeting</h3>
+                        <p class="booking-subtitle">Fill out the form and I'll get back to you within 24 hours</p>
+                        
+                        <form class="advanced-contact-form" id="meetingForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="firstName" required>
+                                    <label for="firstName">First Name *</label>
+                                    <i class="fas fa-user form-icon"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="lastName" required>
+                                    <label for="lastName">Last Name *</label>
+                                    <i class="fas fa-user form-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" required>
+                                <label for="email">Email Address *</label>
+                                <i class="fas fa-envelope form-icon"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" id="phone">
+                                <label for="phone">Phone Number</label>
+                                <i class="fas fa-phone form-icon"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="company">
+                                <label for="company">Company Name</label>
+                                <i class="fas fa-building form-icon"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <select id="serviceInterest" required>
+                                    <option value="">Select Service *</option>
+                                    <option value="seo">SEO Strategy</option>
+                                    <option value="paid-ads">Paid Advertising</option>
+                                    <option value="social-media">Social Media Management</option>
+                                    <option value="content">Content Creation</option>
+                                    <option value="analytics">Analytics & Tracking</option>
+                                    <option value="youtube">YouTube SEO</option>
+                                    <option value="migration">SEO Migration</option>
+                                    <option value="business-model">Business Model Development</option>
+                                    <option value="multiple">Multiple Services</option>
+                                    <option value="consultation">General Consultation</option>
+                                </select>
+                                <label for="serviceInterest">Service of Interest *</label>
+                                <i class="fas fa-briefcase form-icon"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <select id="budget">
+                                    <option value="">Select Budget Range</option>
+                                    <option value="under-1k">Under $1,000/month</option>
+                                    <option value="1k-3k">$1,000 - $3,000/month</option>
+                                    <option value="3k-5k">$3,000 - $5,000/month</option>
+                                    <option value="5k-10k">$5,000 - $10,000/month</option>
+                                    <option value="10k-plus">$10,000+/month</option>
+                                    <option value="project-based">Project-Based</option>
+                                </select>
+                                <label for="budget">Monthly Budget (Optional)</label>
+                                <i class="fas fa-dollar-sign form-icon"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <select id="timeframe" required>
+                                    <option value="">When do you want to start? *</option>
+                                    <option value="immediately">Immediately</option>
+                                    <option value="1-2-weeks">1-2 Weeks</option>
+                                    <option value="1-month">Within a Month</option>
+                                    <option value="2-3-months">2-3 Months</option>
+                                    <option value="exploring">Just Exploring</option>
+                                </select>
+                                <label for="timeframe">Project Timeline *</label>
+                                <i class="fas fa-calendar form-icon"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" rows="4" required></textarea>
+                                <label for="message">Tell me about your goals *</label>
+                                <i class="fas fa-comment form-icon"></i>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter">
+                                <label for="newsletter">Send me weekly marketing tips and insights</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full ripple-effect">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Meeting Request
+                            </button>
+
+                            <p class="form-note">
+                                <i class="fas fa-lock"></i>
+                                Your information is secure and will never be shared
+                            </p>
+                        </form>
+
+                        <p class="calendly-note">
+                            <i class="fas fa-calendar-alt"></i>
+                            Prefer instant booking? <a href="#calendly" class="switch-calendly">Use calendar instead</a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our consultation</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>Is the consultation really free?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! The 30-minute strategy session is completely free with no obligation. It's my way of understanding your needs and showing you how I can help.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>What should I prepare for the meeting?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Just bring your marketing questions and goals! If you have access to your website analytics or current marketing data, that's helpful but not required.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>How long is the consultation?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The consultation is 30 minutes, which is enough time to discuss your goals, review your current situation, and provide initial recommendations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>Can I reschedule if needed?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can reschedule or cancel anytime up to 24 hours before the meeting through the confirmation email.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>What happens after the consultation?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After our call, I'll send you a summary email with my recommendations. If we're a good fit, we can discuss next steps for working together.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>Do you work with businesses of all sizes?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! I work with startups, small businesses, and established companies. Every business has unique needs, and I tailor my approach accordingly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Marketing<span class="dot">Pro</span></h3>
+                    <p>Transforming brands through data-driven digital marketing strategies.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="schedule.html">Schedule Meeting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MarketingPro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
