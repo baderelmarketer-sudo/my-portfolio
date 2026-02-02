@@ -3,25 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Expert | Transform Your Brand</title>
+    <title>Blog | Digital Marketing Insights</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="js-components.css">
 </head>
 <body>
-    
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loader">
-            <div class="loader-circle"></div>
-            <p>Loading Experience...</p>
-        </div>
-    </div>
-
-    <!-- Cursor Follower -->
-    <div class="cursor-dot" id="cursorDot"></div>
-    <div class="cursor-outline" id="cursorOutline"></div>
-
+    <!-- Your custom JavaScript -->
+<script src="script.js"></script>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
@@ -30,9 +20,9 @@
                     <h2>Marketing<span class="dot">Pro</span></h2>
                 </div>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="experience.html" class="nav-link">Experience</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
                     <li><a href="schedule.html" class="nav-link btn-nav">Schedule Meeting</a></li>
                 </ul>
                 <div class="hamburger" id="hamburger">
@@ -44,331 +34,93 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Particles -->
-    <section id="home" class="hero">
-        <div id="particles-js"></div>
-        <div class="hero-gradient-overlay"></div>
-        
+    <!-- Page Hero -->
+    <section class="page-hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
-                    <span class="hero-badge">
-                        <i class="fas fa-award"></i> Award-Winning Digital Marketer
-                    </span>
-                    <h1 class="hero-title">
-                        Elevate Your Brand with
-                        <span class="gradient-text typing-effect" id="typingText"></span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        I combine data-driven strategies with creative excellence to deliver 
-                        measurable results that transform businesses and accelerate growth.
-                    </p>
-                    
-                    <div class="hero-stats">
-                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
-                            <div class="stat-number" data-target="250">0</div>
-                            <div class="stat-label">Projects Completed</div>
-                        </div>
-                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
-                            <div class="stat-number" data-target="98">0</div>
-                            <div class="stat-label">Client Satisfaction %</div>
-                        </div>
-                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="600">
-                            <div class="stat-number" data-target="5">0</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                    </div>
+            <div class="page-hero-content" data-aos="fade-up">
+                <span class="page-badge">Marketing Insights</span>
+                <h1>Expert Tips & Industry Trends</h1>
+                <p>Stay ahead with actionable strategies and proven techniques</p>
+            </div>
+        </div>
+    </section>
 
-                    <div class="hero-buttons">
-                        <a href="experience.html" class="btn btn-primary ripple-effect">
-                            Explore My Work
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="schedule.html" class="btn btn-secondary ripple-effect">
-                            <i class="fas fa-calendar-alt"></i>
-                            Book a Call
-                        </a>
-                    </div>
-
-                    <div class="hero-social" data-aos="fade-up" data-aos-delay="800">
-                        <span>Follow Me:</span>
-                        <a href="https://linkedin.com" target="_blank" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" class="social-icon">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://youtube.com" target="_blank" class="social-icon">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
+    <!-- Blog Filters -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-filters" data-aos="fade-up">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="blogSearch" placeholder="Search articles...">
                 </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-th"></i> All Posts
+                    </button>
+                    <button class="filter-btn" data-filter="seo">
+                        <i class="fas fa-search"></i> SEO
+                    </button>
+                    <button class="filter-btn" data-filter="paid-ads">
+                        <i class="fas fa-ad"></i> Paid Ads
+                    </button>
+                    <button class="filter-btn" data-filter="social-media">
+                        <i class="fas fa-hashtag"></i> Social Media
+                    </button>
+                    <button class="filter-btn" data-filter="content">
+                        <i class="fas fa-pen-fancy"></i> Content
+                    </button>
+                    <button class="filter-btn" data-filter="analytics">
+                        <i class="fas fa-chart-line"></i> Analytics
+                    </button>
+                    <button class="filter-btn" data-filter="youtube">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </button>
+                </div>
+            </div>
 
-                <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="floating-element element-1">
-                        <div class="glass-card">
-                            <i class="fas fa-chart-line"></i>
-                            <div class="card-content">
-                                <h4>ROI Growth</h4>
-                                <p class="percentage">+185%</p>
+            <!-- Featured Post -->
+            <div class="featured-post" data-aos="fade-up">
+                <div class="featured-post-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200" alt="Featured">
+                    <span class="featured-badge">Featured</span>
+                </div>
+                <div class="featured-post-content">
+                    <div class="post-meta">
+                        <span class="post-category seo-cat">SEO</span>
+                        <span><i class="far fa-calendar"></i> Feb 1, 2025</span>
+                        <span><i class="far fa-clock"></i> 12 min read</span>
+                    </div>
+                    <h2>The Complete Guide to SEO in 2025: Strategies That Actually Work</h2>
+                    <p>Discover the latest SEO techniques that are delivering real results. From AI-powered content optimization to advanced technical SEO, learn what's working now and how to implement these strategies for your business.</p>
+                    <a href="blog-post.html" class="btn btn-primary ripple-effect">
+                        Read Full Article <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-posts-grid">
+                
+                <!-- Blog Post 1 -->
+                <article class="blog-post-card" data-category="seo" data-aos="fade-up">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800" alt="SEO">
+                        <div class="post-overlay">
+                            <a href="blog-post.html" class="read-post-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="post-meta">
+                            <span class="post-category seo-cat">SEO</span>
+                            <span class="post-date"><i class="far fa-calendar"></i> Jan 28, 2025</span>
+                        </div>
+                        <h3>10 Technical SEO Mistakes Killing Your Rankings</h3>
+                        <p>Avoid these common technical SEO errors that could be holding your website back from reaching the top of search results.</p>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <i class="fas fa-user-circle"></i>
+                                <span>By Marketing Pro</span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="floating-element element-2">
-                        <div class="glass-card">
-                            <i class="fas fa-users"></i>
-                            <div class="card-content">
-                                <h4>Audience Reach</h4>
-                                <p class="percentage">2M+</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="floating-element element-3">
-                        <div class="glass-card">
-                            <i class="fas fa-rocket"></i>
-                            <div class="card-content">
-                                <h4>Campaigns</h4>
-                                <p class="percentage">150+</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-circle"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1000">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <p>Scroll to explore</p>
-        </div>
-    </section>
-
-    <!-- Services Preview Section -->
-    <section class="services-preview">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">What I Offer</span>
-                <h2 class="section-title">Complete Digital Marketing Solutions</h2>
-                <p class="section-subtitle">End-to-end services to grow your online presence</p>
-            </div>
-
-            <div class="services-showcase">
-                <div class="service-preview-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-number">01</div>
-                    <div class="service-icon-large">
-                        <i class="fas fa-search-dollar"></i>
-                    </div>
-                    <h3>SEO Mastery</h3>
-                    <p>Dominate search rankings with proven strategies that drive organic traffic and qualified leads.</p>
-                    <a href="experience.html#seo" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-preview-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-number">02</div>
-                    <div class="service-icon-large">
-                        <i class="fas fa-ad"></i>
-                    </div>
-                    <h3>Paid Advertising</h3>
-                    <p>Maximize ROI with expertly managed Google Ads and Meta campaigns that convert.</p>
-                    <a href="experience.html#paid-ads" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-preview-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-number">03</div>
-                    <div class="service-icon-large">
-                        <i class="fas fa-share-alt"></i>
-                    </div>
-                    <h3>Social Media</h3>
-                    <p>Build engaged communities and authentic connections across all major platforms.</p>
-                    <a href="experience.html#social" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-preview-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-number">04</div>
-                    <div class="service-icon-large">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Analytics & Insights</h3>
-                    <p>Data-driven decisions powered by comprehensive tracking and performance analysis.</p>
-                    <a href="experience.html#analytics" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="cta-center" data-aos="zoom-in">
-                <a href="experience.html" class="btn btn-primary btn-large ripple-effect">
-                    View All Services
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Recent Blog Posts -->
-    <section class="recent-blog">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-badge">Latest Insights</span>
-                <h2 class="section-title">From the Blog</h2>
-                <p class="section-subtitle">Expert tips and industry trends</p>
-            </div>
-
-            <div class="blog-preview-grid">
-                <article class="blog-preview-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="blog-preview-image">
-                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800" alt="SEO Blog">
-                        <div class="blog-overlay">
-                            <span class="blog-cat">SEO</span>
-                        </div>
-                    </div>
-                    <div class="blog-preview-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> Feb 1, 2025</span>
-                            <span><i class="far fa-clock"></i> 8 min</span>
-                        </div>
-                        <h3>Advanced SEO Techniques for 2025</h3>
-                        <p>Discover cutting-edge SEO strategies that are dominating search results this year...</p>
-                        <a href="blog-post.html" class="blog-read-more">
-                            Read Article <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="blog-preview-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="blog-preview-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Paid Ads">
-                        <div class="blog-overlay">
-                            <span class="blog-cat">Paid Ads</span>
-                        </div>
-                    </div>
-                    <div class="blog-preview-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> Jan 28, 2025</span>
-                            <span><i class="far fa-clock"></i> 6 min</span>
-                        </div>
-                        <h3>Google Ads ROI: Triple Your Returns</h3>
-                        <p>Learn the exact framework I use to achieve 3x ROI on Google Ads campaigns...</p>
-                        <a href="blog-post.html" class="blog-read-more">
-                            Read Article <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="blog-preview-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="blog-preview-image">
-                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800" alt="Social Media">
-                        <div class="blog-overlay">
-                            <span class="blog-cat">Social Media</span>
-                        </div>
-                    </div>
-                    <div class="blog-preview-content">
-                        <div class="blog-meta">
-                            <span><i class="far fa-calendar"></i> Jan 25, 2025</span>
-                            <span><i class="far fa-clock"></i> 5 min</span>
-                        </div>
-                        <h3>Instagram Growth Hacks That Actually Work</h3>
-                        <p>Proven strategies to grow your Instagram following organically in 2025...</p>
-                        <a href="blog-post.html" class="blog-read-more">
-                            Read Article <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="cta-center" data-aos="fade-up">
-                <a href="blog.html" class="btn btn-secondary ripple-effect">
-                    View All Articles
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content" data-aos="zoom-in">
-                <h2>Ready to Transform Your Digital Presence?</h2>
-                <p>Let's discuss how I can help you achieve your marketing goals</p>
-                <div class="cta-buttons">
-                    <a href="schedule.html" class="btn btn-primary btn-large ripple-effect">
-                        <i class="fas fa-calendar-check"></i>
-                        Schedule Free Consultation
-                    </a>
-                    <a href="experience.html" class="btn btn-secondary btn-large ripple-effect">
-                        View Portfolio
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Marketing<span class="dot">Pro</span></h3>
-                    <p>Transforming brands through data-driven digital marketing strategies.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="experience.html">Experience</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="schedule.html">Schedule Meeting</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="experience.html#seo">SEO Strategy</a></li>
-                        <li><a href="experience.html#paid-ads">Paid Advertising</a></li>
-                        <li><a href="experience.html#social">Social Media</a></li>
-                        <li><a href="experience.html#analytics">Analytics</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> hello@marketingpro.com</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Your City, Country</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 MarketingPro. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+                            <span class="rea
